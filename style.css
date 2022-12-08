@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gochi+Hand&family=The+Girl+Next+Door&family=Courgette&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: orchid;
+    color: lavenderblush;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
+/*header*/
+header {
+    background-color: darkviolet;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.icon {
+    float: left;
+}
+
+.menu {
+    display: flex;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: bisque;
+    list-style: none;
+    margin-left: 60px;
+    font-size: 20px;
+    display: flex;
+}
+
+header nav a:hover {
+    color: aqua;
+    transform: scale(1.5);
+    transition: all .5s ease-in-out;
+}
+
+/*main*/
+
+.medio {
+    white-space: break-spaces;
+    text-align: -webkit-center;
+    height: 20%;
+}
+
+.titulo {
+    margin: revert;
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 10em;
+    animation: anim 5s infinite;
+}
+
+@keyframes anim {
+    from {
+        width: 0;
+    }
+}
+
+button {
+    list-style: none;
+}
+
+a .boton {
+    text-align: center;
+    margin: auto;
+}
+
+.boton {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px 30px;
+    border: 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+    font-family: 'The Girl Next Door', cursive;
+}
+
+.boton:hover {
+    background-color: rgb(101, 33, 165);
+    padding: 15px 20px;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+
+}
+
+.books {
+    text-align: center;
+}
+
+.programas,
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+/*about us*/
+.trabajos{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.trabajos iframe{
+    width: 60%;
+}
+.trabajos p{
+    width: 50%;
+    padding: 80px;
+    font-size: 25px;
+}
+
+/*servicios*/
+.container-serv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px;
+
+}
+
+
+/*quince*/
+.combos {
+    font-family: 'Courgette';
+    font-weight: lighter;
+    color: aliceblue;
+
+}
+
+.combos h3 {
+    text-align: left;
+    color: paleturquoise;
+}
+
+.combos div {
+    padding: 10px;
+    width: max-content;
+    white-space: pre-line;
+}
+
+.combos div:hover {
+    transform: translate(30px);
+    -webkit-transform: translate(30px);
+    -ms-transform: translate(30px);
+    transition: all .5s ease-in-out
+}
+
+
+.caja {
+    border: 5px rgba(255, 0, 212, 0.995);
+    border-radius: 90px;
+    border-style: solid;
+    background-color: rgba(179, 76, 170, 0.514);
+    overflow: hidden;
+}
+
+
+.caja p {
+    text-align: center;
+}
+
+.imagen:hover {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+}
+
+.imagen {
+    filter: grayscale(100%);
+    width: 90%;
+    border-radius: 80px;
+}
+
+.imagen:hover {
+    filter: none;
+}
+
+
+
+
+/*contact*/
+form {
+    margin: 0 auto;
+    width: 900px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.formulario {}
+
+fieldset {
+    width: fit-content;
+    align-items: center;
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgb(25, 1, 47);
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+
+
+/*footer*/
+footer {
+    background-color: rgb(73, 38, 112);
+    font-family: 'The Girl Next Door', cursive;
+    text-align: center;
+
+}
+
+footer nav a {
+    display: contents;
+}
+
+footer nav a img {
+    width: 70px;
+}
+
+footer nav a img:hover {
+    transform: scale(2);
+
+}
+
+.info {
+    padding-top: 20px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.red-social {
+    margin: auto;
+}
+
+.ubicacion {}
+
+.ddrr {
+    filter: blur(0.8px);
+}
