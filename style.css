@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    width: auto;
     background-color: orchid;
     color: lavenderblush;
     font-family: 'Dancing Script', cursive;
@@ -37,6 +38,9 @@ header {
 .menu {
     display: flex;
     padding: 10px;
+}
+.menu nav img{
+    width: 70px;
 }
 
 header nav {
@@ -121,6 +125,20 @@ a .boton {
 .info {
     display: flex;
     flex-direction: row;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+.icon-wsp {
+    width: 80px;
+}
+
+.icon-wsp:hover {
+    transform: scale(1.5);
 }
 
 /*about us*/
@@ -279,3 +297,49 @@ footer nav a img:hover {
 .ddrr {
     filter: blur(0.8px);
 }
+
+/*responsive para moviles*/
+@media screen and (max-width:600px) {
+    
+    /*about-us*/
+    .trabajos{
+        padding: 0;
+        margin: 10px;
+        display: inherit;
+    }
+    .trabajos p{
+        padding: 0;
+        width: 100%;
+    }
+    .trabajos iframe{
+        width: 100%;
+    }
+
+    /*servicios*/
+    .container-serv{
+        margin: 5px;
+
+    }
+
+    /*contact*/
+    
+
+
+
+
+    /*footer*/
+    .info{
+        display: block;
+    }
+    .ddrr{
+       /* padding:50px;
+    */}
+
+
+
+
+
+
+
+}
+
