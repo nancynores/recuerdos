@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 html {
@@ -29,47 +31,68 @@ h3 {
 header {
     background-color: darkviolet;
     font-family: 'Gochi Hand', cursive;
+    background-size: cover;
 }
 
-.icon {
-    float: left;
-}
-
-.menu {
-    display: flex;
+.menu{
     padding: 10px;
-}
-.menu nav img{
-    width: 70px;
-}
-
-header nav {
     display: flex;
+    width: 100%;
+    box-sizing: border-box;
     align-items: center;
-    text-align: center;
+    
+}
+.menu .logo{
+    float: left;
+    margin-right: 50px;
+}
+.menu a{
+    color: bisque;
+    text-decoration: none;
+    list-style: none;
+    font-size: 23px;
+}
+.menu a:hover {
+    color: aqua;
+    transition: all .5s ease-in-out;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
 }
 
-header nav a {
-    text-decoration: none;
-    color: bisque;
-    list-style: none;
-    margin-left: 60px;
-    font-size: 20px;
+.menu .navbar ul{
     display: flex;
 }
-
-header nav a:hover {
-    color: aqua;
-    transform: scale(1.5);
-    transition: all .5s ease-in-out;
+.menu .navbar ul li{
+    margin: 0 30px;
 }
+.menu .desplegable{
+    display: none;
+    position: absolute;
+    width: 40px;
+    right: 30px;
+
+}
+
 
 /*main*/
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
 
 .medio {
-    white-space: break-spaces;
+    margin: 50px;
+    white-space: pre-line;
     text-align: -webkit-center;
-    height: 20%;
 }
 
 .titulo {
@@ -117,11 +140,53 @@ a .boton {
 
 }
 
-.books {
+.content{
+    padding: 50px 10px;
+}
+.content .container{
     text-align: center;
 }
 
-.programas,
+#about-us h2{
+    padding: 20px;
+}
+
+#promos{
+    padding: 50px 15px;
+}
+#promos .container{
+    text-align: center;
+ 
+}
+#promos h2{
+    padding-bottom: 20px;
+}
+#promos p{
+    display: block;
+}
+#promos .books{
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+#promos .programas{
+    display: flex;
+    justify-content: center;
+}
+
+.books {
+    text-align: center;
+}
+.books h3{
+    padding: 15px;
+    padding-top: 0;
+}
+.books p{
+    text-align: center;
+    padding: 5px 20px 30px;
+}
+
 .info {
     display: flex;
     flex-direction: row;
@@ -133,6 +198,7 @@ a .boton {
     right: 30px;
     cursor: pointer;
 }
+
 .icon-wsp {
     width: 80px;
 }
@@ -140,6 +206,7 @@ a .boton {
 .icon-wsp:hover {
     transform: scale(1.5);
 }
+
 
 /*about us*/
 .trabajos{
@@ -153,11 +220,13 @@ a .boton {
 .trabajos iframe{
     width: 60%;
 }
+
 .trabajos p{
     width: 50%;
     padding: 80px;
     font-size: 25px;
 }
+
 
 /*servicios*/
 .container-serv {
@@ -168,8 +237,7 @@ a .boton {
 
 }
 
-
-/*quince*/
+/*promos*/
 .combos {
     font-family: 'Courgette';
     font-weight: lighter;
@@ -195,7 +263,6 @@ a .boton {
     transition: all .5s ease-in-out
 }
 
-
 .caja {
     border: 5px rgba(255, 0, 212, 0.995);
     border-radius: 90px;
@@ -204,14 +271,14 @@ a .boton {
     overflow: hidden;
 }
 
-
 .caja p {
     text-align: center;
 }
 
 .imagen:hover {
-    -webkit-transform: scale(1.6);
     transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    filter: none;
 }
 
 .imagen {
@@ -219,12 +286,6 @@ a .boton {
     width: 90%;
     border-radius: 80px;
 }
-
-.imagen:hover {
-    filter: none;
-}
-
-
 
 
 /*contact*/
@@ -234,13 +295,23 @@ form {
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
+    text-align: center;
 }
 
-.formulario {}
+.formulario{
+    align-items: center;
+
+}
 
 fieldset {
     width: fit-content;
+    margin: auto;
     align-items: center;
+    text-align: center;
+
+}
+fieldset input{
+    margin: 5px;
 }
 
 input:focus,
@@ -252,7 +323,6 @@ textarea {
     vertical-align: top;
     height: 5em;
 }
-
 
 
 /*footer*/
@@ -292,15 +362,65 @@ footer nav a img:hover {
     margin: auto;
 }
 
-.ubicacion {}
-
 .ddrr {
     filter: blur(0.8px);
 }
 
 /*responsive para moviles*/
-@media screen and (max-width:600px) {
+@media screen and (max-width:950px) {
     
+    header{
+        height: 45vh;
+    }
+
+    .menu{
+        padding: 10px;
+        padding-bottom: 0;
+    }
+    .menu .desplegable{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        background-color: rgba(153, 50, 204, 0.377);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 42vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        
+    }
+    .navbar ul{    
+        flex-direction: column;
+        align-items: center;
+
+     }
+
+     .menu .navbar ul li{
+        margin: 10px;
+        
+    }
+    .menu a{
+        margin-left: 0;
+        font-size: 30px;
+        
+    }
+
+    #promos .container{
+        text-align: center;
+    }
+    #promos .programas{
+        display: block;
+    }
+    #promos .books{
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+
     /*about-us*/
     .trabajos{
         padding: 0;
@@ -315,31 +435,31 @@ footer nav a img:hover {
         width: 100%;
     }
 
+
     /*servicios*/
     .container-serv{
         margin: 5px;
 
     }
 
+
     /*contact*/
-    
-
-
+    form{
+        width: 100%;
+    }
+    form fieldset{
+        display: grid;
+        margin: auto;
+        width: 100%;
+        border-radius: 10px;
+    }
 
 
     /*footer*/
     .info{
         display: block;
     }
-    .ddrr{
-       /* padding:50px;
-    */}
-
-
-
-
-
-
+    
 
 }
 

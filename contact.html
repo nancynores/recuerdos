@@ -12,36 +12,41 @@
 
 <body>
     <header>
-        <div class="menu">
-            <nav>
-                <img class="icon" src="image/camara_logo.png" alt="logo" width="70px">
-                <a href="index.html">Inicio</a>
-                <a href="about_us.html">Sobre Nosotros</a>
-                <a href="products.html">Servicios</a>
-                <a href="contact.html">Contacto</a>
-            </nav>
-        </div>
+        <nav class="menu">
+            <img class="logo" src="image/camara_logo.png" alt="logo" width="90px" height="70">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about_us.html">Sobre Nosotros</a></li>
+                    <li><a href="products.html">Books</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
         <br>
         <h2>Formulario de contacto</h2>
         <br>
-        <form class="formulario" action="mailto:direccion@correo.com" method="post" enctype="text/plain"
-            target="_blank">
+        <form class="formulario" action="mailto:direccion@correo.com" target="_blank" method="post"
+            enctype="text/plain">
             <fieldset>
                 <legend>Datos personales</legend>
                 <label for="firstname">Nombre: </label>
-                <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui..." required>
+                <input size="30" type="text" id="firstname" name="Nombre" placeholder="Ingrese su nombre aqui..."
+                    required>
                 <label for="lastname">Apellido: </label>
-                <input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aqui...">
+                <input size="30" type="text" id="lastname" name="Apellido" placeholder="Ingrese su apellido aqui...">
                 <label for="telefono">Telefono: </label>
-                <input type="tel" name="telefono" placeholder="Ingrese su telefono aqui ....">
+                <input type="tel" id="telefono" name="Telefono" placeholder="Ingrese su telefono aqui ....">
                 <br><br>
                 <label for="street">Direccion: </label>
-                <input size="30" type="text" name="address" placeholder="Ingrese su dirección aqui..." required>
+                <input size="30" type="text" id="street" name="Direccion" placeholder="Ingrese su dirección aqui..."
+                    required>
                 <label for="city">Localidad: </label>
-                <select name="ciudad">
+                <select id="city" name="Ciudad">
                     <option value="">CABA</option>
                     <option value="">Gran Buenos Aires</option>
                     <option value="">San Miguel</option>
@@ -52,23 +57,24 @@
                     <option value="">Ramos</option>
                 </select>
                 <label for="zipcode">Código Postal: </label>
-                <input type="text" name="zipcode" placeholder="Ingrese su codigo postal aqui...">
+                <input type="text" id="zipcode" name="CP" placeholder="Ingrese su codigo postal aqui...">
                 <br><br>
             </fieldset>
             <br><br>
             <fieldset>
                 <legend>Consulta</legend>
-                <p> Promo que desea consultar
-                    <input type="radio" name="promo" value="quince"> Book 15 años
-                    <input type="radio" name="promo" value="casamiento"> Book casamiento
-                    <input type="radio" name="promo" value="evento"> Book eventos
+                <p> Promo que desea consultar <br>
+                    <input type="radio" name="Promo" value="Quince"> Book 15 años
+                    <input type="radio" name="Promo" value="Casamiento"> Book casamientos
+                    <input type="radio" name="Promo" value="Evento"> Book eventos
                 </p>
                 <br>
-                <label for="comentario">Comentarios: </label> <textarea name="comentario" rows="5"
-                    cols="30">Ingrese aqui su consulta...</textarea>
+                <label for="coment">Comentarios: </label>
+                <textarea id="coment" name="Comentario" rows="5" cols="30"
+                    placeholder="Ingrese aqui su consulta..."></textarea>
                 <br><br>
                 <label for="fecha">Fecha evento: </label>
-                <input type="date" name="fecha">
+                <input type="date" id="fecha" name="Fecha">
                 <br><br>
             </fieldset>
             <br><br>
