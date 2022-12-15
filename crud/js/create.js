@@ -11,7 +11,7 @@ function guardar() {
         evento: e,
         imagen: i
     }
-    let url = "http://nanN.pythonanywhere.com/productos"
+    let url = "https://nanN.pythonanywhere.com/productos"
     var options = {
         body: JSON.stringify(producto),
         method: 'POST',

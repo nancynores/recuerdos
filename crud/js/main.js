@@ -7,7 +7,7 @@ if (document.getElementById("app")) {
                 productos: [],
                 errored: false,
                 loading: true,
-                url: "http://nanN.pythonanywhere.com/productos"
+                url: "https://nanN.pythonanywhere.com/productos"
                 }
         },
         methods: {
@@ -23,7 +23,7 @@ if (document.getElementById("app")) {
                     })
             },
             eliminar(producto) {
-                const url = 'http://nanN.pythonanywhere.com/productos/' + producto;
+                const url = 'https://nanN.pythonanywhere.com/productos/' + producto;
                 var options = {
                     method: 'DELETE',
                 }
