@@ -20,6 +20,7 @@ body {
     font-size: 20px;
 }
 
+
 h1,
 h2,
 h3 {
@@ -77,38 +78,10 @@ header {
 
 /*main*/
 .container{
-    max-width: 70rem;
+    max-width: 1400px;
     margin: auto;
 }
 
-#inicio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.medio {
-    margin: 50px;
-    white-space: pre-line;
-    text-align: -webkit-center;
-}
-
-.titulo {
-    margin: revert;
-    font-size: 50px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 10em;
-    animation: anim 5s infinite;
-}
-
-@keyframes anim {
-    from {
-        width: 0;
-    }
-}
 
 button {
     list-style: none;
@@ -140,163 +113,77 @@ a .boton {
 
 }
 
-.content{
-    padding: 50px 10px;
-}
-.content .container{
-    text-align: center;
-}
 
-#about-us h2{
-    padding: 20px;
-}
-
-#promos{
-    padding: 50px 15px;
-}
-#promos .container{
-    text-align: center;
- 
-}
-#promos h2{
-    padding-bottom: 20px;
-}
-#promos p{
-    display: block;
-}
-#promos .books{
-    background-position: center center;
-    background-size: cover;
-    padding: 10px 15px;
-    border-radius: 15px;
-}
-#promos .programas{
-    display: flex;
-    justify-content: center;
-}
-
-.books {
-    text-align: center;
-}
-.books h3{
-    padding: 15px;
-    padding-top: 0;
-}
-.books p{
-    text-align: center;
-    padding: 5px 20px 30px;
-}
-
-.info {
-    display: flex;
-    flex-direction: row;
-}
-
-.whatsapp {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    cursor: pointer;
-}
-
-.icon-wsp {
-    width: 80px;
-}
-
-.icon-wsp:hover {
-    transform: scale(1.5);
-}
-
-
-/*about us*/
-.nosotros{
-    max-width: 80rem;
-    margin: 30px auto;
-    margin-bottom: 30px;
-    text-align: center;
-   
-}
-
-.trabajos{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-
-}
-
-.trabajos iframe{
-    width: 60%;
-}
-
-.trabajos p{
-    width: 50%;
-    padding: 80px;
-    font-size: 25px;
-}
 
 
 /*servicios*/
-.container-serv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 40px;
-
+#serv{
+    
+    background-color: orchid;
+    font-size: 20px;
 }
 
-/*promos*/
-.combos {
-    font-family: 'Courgette';
-    font-weight: lighter;
-    color: aliceblue;
-
+#serv main{
+    font-family: 'Courgette', cursive;
+    color: lavenderblush;
+    
 }
-
-.combos h3 {
-    text-align: left;
-    color: paleturquoise;
+#serv h1{
+    margin: 30px;
 }
-
-.combos div {
-    padding: 10px;
-    width: max-content;
-    white-space: pre-line;
+#serv table{
+    vertical-align: middle;
 }
-
-.combos div:hover {
-    transform: translate(30px);
-    -webkit-transform: translate(30px);
-    -ms-transform: translate(30px);
-    transition: all .5s ease-in-out
+table tr{
+    color: lavenderblush;
 }
-
-.caja {
-    border: 5px rgba(255, 0, 212, 0.995);
-    border-radius: 90px;
-    border-style: solid;
-    background-color: rgba(179, 76, 170, 0.514);
-    overflow: hidden;
+table th{
+    height: max-content;
 }
-
-.caja p {
+table td{
+    border-style: none;
+    display: block;
+}
+table img{
+    width:20%;
+    height: 20%;
+}
+#serv tbody{
     text-align: center;
+   
+}
+#serv footer{
+    color: lavenderblush;  
 }
 
-.imagen:hover {
-    transform: scale(1.6);
-    -webkit-transform: scale(1.6);
-    filter: none;
+/*create*/
+#create{
+    background-color: orchid;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    color: lavenderblush;
+}
+#create h1{
+    margin: 30px;
+}
+#create input{
+    color: darkslategrey;
 }
 
-.imagen {
-    filter: grayscale(100%);
-    width: 90%;
-    border-radius: 80px;
+/*update*/
+#update{
+    background-color: orchid;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    color: lavenderblush;
+}
+#update h1{
+    margin: 30px;
+}
+#update input{
+    color: darkslategrey;
 }
 
-
-/*contact*/
 form {
     margin: 0 auto;
     width: 900px;
@@ -353,8 +240,26 @@ footer nav a img:hover {
     transform: scale(2);
 
 }
+#serv footer p{
+    margin-bottom: 0;
+    height: 40px;
+    align-self: center;
+}
+#create footer p{
+    margin-bottom: 0;
+    height: 40px;
+    align-self: center;
+}
+#update footer p{
+    margin-bottom: 0;
+    height: 40px;
+    align-self: center;
+}
+
 
 .info {
+    display: flex;
+    flex-direction: row;
     padding-top: 20px;
     justify-content: space-around;
     font-size: 30px;
@@ -372,6 +277,8 @@ footer nav a img:hover {
 
 .ddrr {
     filter: blur(0.8px);
+    background-color: rgb(73, 38, 112);
+
 }
 
 /*responsive para moviles*/
@@ -401,61 +308,57 @@ footer nav a img:hover {
         align-items: end;
         
     }
-    .navbar ul{    
+    .menu .navbar ul{    
         flex-direction: column;
         align-items: center;
 
      }
 
-     .menu .navbar ul li{
-        margin: 10px;
+    .menu .navbar ul li{
+        margin: 5px;
+        text-align: center;
         
     }
     .menu a{
         margin-left: 0;
         font-size: 30px;
         
-    }
-
-    #promos .container{
-        text-align: center;
-    }
-    #promos .programas{
-        display: block;
-    }
-    #promos .books{
-        padding: 0;
-        padding-bottom: 30px;
-    }
-
-
-    /*about-us*/
-    .trabajos{
-        padding: 0;
-        margin: 10px;
-        display: inherit;
-    }
-    .trabajos p{
-        padding: 0;
-        width: 100%;
-    }
-    .trabajos iframe{
-        width: 100%;
-    }
+    } 
 
 
     /*servicios*/
-    .container-serv{
-        margin: 5px;
-
+    #serv header{
+        display: flex;
+    }    
+    #serv footer p{
+        margin-bottom: 0;
+        height: 40px;
+        align-self: center;
     }
-
-    .combos div{
+    table tr{
         width: 100%;
     }
 
+    #create header{
+        height: auto;
+        align-items: center;
+    }    
+    #create footer p{
+        margin-bottom: 0;
+        height: 40px;
+        align-self: center;
+    }
 
-    /*contact*/
+    #update header{
+        height: auto;
+        align-items: center;
+    }
+    #update footer p{
+        margin-bottom: 0;
+        height: 40px;
+        align-self: center;
+    }
+
     form{
         width: 100%;
     }
